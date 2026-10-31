@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FEROZ — La carga se subasta, no se regatea</title>
+    <meta
+      name="description"
+      content="Subasta inversa de fletes en Venezuela. Publicas tu carga con un tope en dólares, los transportistas habilitados compiten a la baja contra un reloj y el pago queda retenido hasta la entrega con código y fotos."
+    />
+    <meta name="theme-color" content="#F2F4F6" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FEROZ — Conectamos a dos. Llegamos a todos." />
+    <meta
+      property="og:description"
+      content="Publica tu carga con un tope. Los transportistas habilitados compiten a la baja y el pago se libera al confirmar la entrega."
+    />
+    <meta property="og:image" content="assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#documento">Saltar al contenido</a>
+
+    <header class="rail">
+      <div class="shell rail-inner">
+        <a class="mark" href="#documento" aria-label="FEROZ, inicio">
+          <img src="assets/logo.png" alt="" width="40" height="40" />
+          <span class="mark-name">FEROZ</span>
+          <span class="mark-sub">Manifiesto de operación</span>
+        </a>
+
+        <nav class="rail-nav" aria-label="Secciones">
+          <a href="#cierre">Cierre</a>
+          <a href="#dinero">Dinero</a>
+          <a href="#acceso">Acceso</a>
+          <a href="#resto">Producto</a>
+        </nav>
+
+        <a class="btn btn-ink btn-small" data-wa="cliente" href="#empezar">Pedir una carga</a>
+      </div>
+    </header>
+
+    <main id="documento">
+      <!-- ------------------------------------------------------------------ -->
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">
+              <span class="kicker-dot" aria-hidden="true"></span>
+              Subasta inversa de fletes · Venezuela
+            </p>
+
+            <h1>Tu carga no se regatea.<br /><span class="accent-ink">Se subasta.</span></h1>
+
+            <p class="lede">
+              Publicas el envío con un tope en dólares. Los transportistas habilitados compiten a la
+              baja contra un reloj. Al vencer gana la mejor oferta; si una te convence antes, la
+              aceptas tú.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-accent" data-wa="cliente" href="#empezar">
+                Quiero enviar una carga
+              </a>
+              <a class="btn btn-rule" data-wa="transportista" href="#empezar">
+                Quiero ofertar viajes
+              </a>
+            </div>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt>Dirección del precio</dt>
+                <dd>Solo hacia abajo, con un decremento mínimo por oferta</dd>
+              </div>
+              <div class="fact">
+                <dt>Cierre</dt>
+                <dd>La mejor oferta habilitada, o tu elección antes del reloj</dd>
+              </div>
+              <div class="fact">
+                <dt>Pago</dt>
+                <dd>Retenido por FEROZ hasta que la entrega se confirma</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- The proof object: a real auction, as a client sees it. -->
+          <figure class="waybill">
+            <div class="waybill-head">
+              <div>
+                <span class="doc-label">Subasta</span>
+                <strong class="doc-code">SB-4821</strong>
+              </div>
+              <div class="doc-type">
+                <span class="doc-label">Servicio</span>
+                <strong>Mudanza</strong>
+              </div>
+              <p class="live">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span class="mono">CIERRA 04:12</span>
+              </p>
+            </div>
+
+            <div class="route">
+              <div class="route-end">
+                <span class="doc-label">Recolección</span>
+                <strong>Los Palos Grandes</strong>
+                <span class="mono">Caracas · Distrito Capital</span>
+              </div>
+              <span class="route-arrow" aria-hidden="true">→</span>
+              <div class="route-end route-end-right">
+                <span class="doc-label">Entrega</span>
+                <strong>Valencia</strong>
+                <span class="mono">Carabobo</span>
+              </div>
+            </div>
+
+            <ol class="ladder" aria-label="Ofertas recibidas, de la más alta a la más baja">
+              <li class="ladder-row">
+                <span class="mono ladder-time">03:41</span>
+                <span class="ladder-who">J. Fernández</span>
+                <span class="mono ladder-rate">★ 4,8 · 126 viajes</span>
+                <span class="ladder-amount">$168</span>
+              </li>
+              <li class="ladder-row">
+                <span class="mono ladder-time">02:58</span>
+                <span class="ladder-who">M. Colmenares</span>
+                <span class="mono ladder-rate">★ 4,9 · 204 viajes</span>
+                <span class="ladder-amount">$162</span>
+              </li>
+              <li class="ladder-row">
+                <span class="mono ladder-time">01:12</span>
+                <span class="ladder-who">R. Aguirre</span>
+                <span class="mono ladder-rate">★ 4,7 · 88 viajes</span>
+                <span class="ladder-amount">$155</span>
+              </li>
+              <li class="ladder-row is-leader">
+                <span class="mono ladder-time">00:34</span>
+                <span class="ladder-who">L. Pérez</span>
+                <span class="mono ladder-rate">★ 5,0 · 57 viajes</span>
+                <span class="ladder-amount">$149</span>
+              </li>
+            </ol>
+
+            <div class="waybill-foot">
+              <div class="foot-cell">
+                <span class="doc-label">Tope</span>
+                <strong class="mono">$220</strong>
+              </div>
+              <div class="foot-cell">
+                <span class="doc-label">Tarifa mínima</span>
+                <strong class="mono">$95</strong>
+              </div>
+              <div class="foot-cell">
+                <span class="doc-label">Ofertas</span>
+                <strong class="mono">4</strong>
+              </div>
+              <div class="foot-cell foot-cell-leader">
+                <span class="doc-label">Mejor oferta</span>
+                <strong class="mono">$149</strong>
+              </div>
+            </div>
+
+            <figcaption>
+              Vista del cliente. Cada transportista ve la mejor oferta y cuántas hay, nunca a los
+              demás. La oferta líder se pinta en dorado.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="band" id="cierre">
+        <div class="shell">
+          <header class="band-head">
+            <span class="kicker">01 / Cierre</span>
+            <h2>Dos formas de cerrar. Ninguna es una sorpresa.</h2>
+          </header>
+
+          <div class="split">
+            <article class="clause">
+              <p class="clause-tag">Antes del reloj</p>
+              <h3>Tú eliges</h3>
+              <p>
+                Puedes aceptar cualquier oferta activa, no solo la más barata. Reputación, tipo de
+                unidad y hora de llegada también pesan, y la decisión es tuya.
+              </p>
+            </article>
+
+            <article class="clause">
+              <p class="clause-tag">Al llegar a cero</p>
+              <h3>Gana la mejor</h3>
+              <p>
+                Si no aceptaste nada, la subasta se adjudica sola a la mejor oferta que todavía pueda
+                tomar el viaje. Si nadie puede, cierra sin ganador.
+              </p>
+            </article>
+          </div>
+
+          <div class="rules">
+            <p class="rules-title">Reglas que aplica el servidor, no la app</p>
+            <ol class="rule-list">
+              <li><span class="mono">01</span> La oferta debe quedar por debajo del tope del cliente.</li>
+              <li>
+                <span class="mono">02</span> Debe bajar de la mejor oferta al menos el decremento
+                mínimo configurado.
+              </li>
+              <li>
+                <span class="mono">03</span> No puede bajar del piso tarifario de la ruta, cuando
+                la ruta tiene uno: base, kilómetros y reglas por ciudad o servicio.
+              </li>
+              <li>
+                <span class="mono">04</span> Una oferta en el tramo final corre el cierre, para que
+                nadie gane por esperar el último segundo.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="band band-alt" id="dinero">
+        <div class="shell">
+          <header class="band-head">
+            <span class="kicker">02 / Dinero</span>
+            <h2>El viaje se paga completo. El servicio se cobra aparte.</h2>
+            <p class="band-lede">
+              FEROZ no descuenta su parte del monto acordado. El cliente paga el total, la plataforma
+              lo retiene y lo libera cuando la entrega se confirma.
+            </p>
+          </header>
+
+          <ol class="ledger">
+            <li class="ledger-step">
+              <span class="mono ledger-num">01</span>
+              <h3>El cliente paga</h3>
+              <p>
+                Paga el monto acordado y FEROZ lo marca como retenido. Nada sale hacia el
+                transportista todavía.
+              </p>
+            </li>
+            <li class="ledger-step">
+              <span class="mono ledger-num">02</span>
+              <h3>El código viaja</h3>
+              <p>
+                Al adjudicarse el viaje se genera un código de seis dígitos. Solo el cliente lo
+                recibe, y se lo da al transportista cuando la carga llega a destino.
+              </p>
+            </li>
+            <li class="ledger-step">
+              <span class="mono ledger-num">03</span>
+              <h3>La entrega se prueba</h3>
+              <p>
+                El transportista sube al menos dos fotos de la entrega y confirma con el código. Sin
+                las dos cosas no hay cierre.
+              </p>
+            </li>
+            <li class="ledger-step">
+              <span class="mono ledger-num">04</span>
+              <h3>El pago se libera</h3>
+              <p>Confirmada la entrega, el monto retenido se libera completo al transportista.</p>
+            </li>
+          </ol>
+
+          <aside class="wallet" aria-labelledby="wallet-title">
+            <div class="wallet-copy">
+              <h3 id="wallet-title">Del lado del transportista: saldo prepago</h3>
+              <p>
+                Ofertar reserva el servicio de esa oferta: un porcentaje del monto, 12% por defecto.
+                Se cobra al confirmar la entrega, no al ofertar. Si el viaje se cancela, la reserva
+                vuelve al saldo.
+              </p>
+              <p>
+                Sin saldo disponible no se puede ofertar, aunque haya documentos al día. El porcentaje
+                y el mínimo de recarga se configuran en el panel de administración.
+              </p>
+            </div>
+
+            <div class="wallet-figures">
+              <div class="figure">
+                <span class="doc-label">Oferta</span>
+                <strong class="mono">$149</strong>
+              </div>
+              <div class="figure">
+                <span class="doc-label">Reserva 12%</span>
+                <strong class="mono">$18</strong>
+              </div>
+              <div class="figure figure-ok">
+                <span class="doc-label">Cobro al entregar</span>
+                <strong class="mono">$18</strong>
+              </div>
+              <p class="wallet-note">
+                La reserva se aparta al adjudicar y se consume al entregar. Nunca queda un saldo
+                negativo.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="band" id="acceso">
+        <div class="shell">
+          <header class="band-head">
+            <span class="kicker">03 / Acceso</span>
+            <h2>Cuatro compuertas. Todas del lado del servidor.</h2>
+            <p class="band-lede">
+              No hay documento vigente, no hay servicio. La plataforma decide con sus propios
+              catálogos, y la app solo muestra lo que el servidor permitió.
+            </p>
+          </header>
+
+          <div class="gate-wrap">
+            <table class="gate">
+              <caption class="sr-only">
+                Requisitos para ofertar y qué ocurre cuando falta cada uno
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Compuerta</th>
+                  <th scope="col">Qué se exige</th>
+                  <th scope="col">Si falta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Identidad</th>
+                  <td>Cédula por ambos lados y selfie, con revisión aprobada</td>
+                  <td><span class="verdict verdict-bad">No oferta</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Documentos</th>
+                  <td>Los que exige ese tipo de carga, vigentes y aprobados</td>
+                  <td><span class="verdict verdict-bad">Ni ve la subasta</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Disponibilidad</th>
+                  <td>Modo activo para recibir solicitudes</td>
+                  <td><span class="verdict">Ve, no oferta</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Saldo</th>
+                  <td>Cubre el servicio de esa oferta</td>
+                  <td><span class="verdict">Ve, no oferta</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="fineprint">
+              La verificación de FEROZ controla la vigencia de los documentos dentro de la plataforma.
+              No sustituye las autorizaciones, certificaciones ni controles de los organismos públicos
+              competentes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="band band-alt" id="resto">
+        <div class="shell">
+          <header class="band-head">
+            <span class="kicker">04 / Producto</span>
+            <h2>Lo que sostiene la subasta.</h2>
+          </header>
+
+          <ul class="parts">
+            <li>
+              <h3>Seguimiento en vivo</h3>
+              <p>El cliente ve por dónde va la carga y en qué etapa está el viaje.</p>
+            </li>
+            <li>
+              <h3>Chat del viaje</h3>
+              <p>Maniobras, horarios y accesos se acuerdan dentro de la plataforma.</p>
+            </li>
+            <li>
+              <h3>Reputación real</h3>
+              <p>Cada viaje entregado se puede calificar, y el historial se ve al ofertar.</p>
+            </li>
+            <li>
+              <h3>Catálogos del panel</h3>
+              <p>
+                Tipos de servicio, ciudades, documentos y tarifas se administran sin publicar código.
+              </p>
+            </li>
+          </ul>
+
+          <div class="nots">
+            <p class="nots-title">Lo que no pasa aquí</p>
+            <ul>
+              <li>No se cobra por ofertar. El servicio se cobra sobre el viaje entregado.</li>
+              <li>No se toca el monto acordado. El cliente paga el total.</li>
+              <li>No se adjudica a quien no puede operar: sin papeles, sin saldo o desconectado.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section class="close-band" id="empezar">
+        <div class="shell close-inner">
+          <div>
+            <span class="kicker kicker-light">05 / Empezar</span>
+            <h2>Empieza con un mensaje.</h2>
+            <p>
+              Te damos de alta y publicas tu primer envío el mismo día. Dinos solo si vas a enviar
+              carga o si tienes vehículo.
+            </p>
+          </div>
+
+          <div class="close-actions">
+            <a class="btn btn-accent" data-wa="cliente" href="#empezar">
+              Quiero enviar una carga
+            </a>
+            <a class="btn btn-on-dark" data-wa="transportista" href="#empezar">
+              Tengo vehículo
+            </a>
+            <p class="close-phone mono">WhatsApp +593 983 859 723</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="shell foot-inner">
+        <div class="foot-brand">
+          <img src="assets/logo.png" alt="" width="48" height="48" />
+          <div>
+            <strong>FEROZ</strong>
+            <span>Conectamos a dos. Llegamos a todos.</span>
+          </div>
+        </div>
+
+        <p class="foot-legal">
+          FEROZ verifica la documentación requerida para operar dentro de la plataforma. Esa
+          verificación no sustituye las autorizaciones de los organismos públicos competentes.
+        </p>
+
+        <nav class="foot-nav" aria-label="Legal">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="eliminar-cuenta.html">Eliminar cuenta</a>
+          <a data-wa="cliente" href="#">WhatsApp</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // One number, two conversations: the greeting tells whoever answers whether
+      // this is a client or a carrier before the first line.
+      const PHONE = '593983859723';
+      const MESSAGES = {
+        cliente:
+          'Hola, quiero publicar un envío en FEROZ. Vengo de la página web, soy cliente.',
+        transportista:
+          'Hola, quiero ofertar envíos en FEROZ. Vengo de la página web, soy transportista.',
+      };
+
+      for (const link of document.querySelectorAll('[data-wa]')) {
+        const message = MESSAGES[link.dataset.wa] || MESSAGES.cliente;
+        link.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
+        link.target = '_blank';
+        link.rel = 'noopener';
+      }
+    </script>
+  </body>
+</html>

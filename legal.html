@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documento legal — FEROZ</title>
+    <meta name="description" content="Documentos legales de FEROZ." />
+    <meta name="theme-color" content="#0B0B0B" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .legal { max-width: 780px; margin: 34px auto 90px; padding: 0 22px; }
+      .legal h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.02em; }
+      .legal h2 { font-size: 19px; margin: 34px 0 8px; }
+      .legal h3 { font-size: 15.5px; margin: 20px 0 6px; color: var(--text-2); }
+      .legal p, .legal li { color: var(--text-2); }
+      .legal ul { padding-left: 22px; margin: 8px 0; }
+      .legal li { margin: 4px 0; }
+      .legal strong { color: var(--text); }
+      .legal .meta { color: var(--text-faint); font-size: 13px; margin: 0 0 22px; }
+      .legal a { color: var(--accent-text); }
+    </style>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="FEROZ" width="44" height="44" />
+          <span class="brand-text">
+            <strong>FEROZ</strong>
+            <small>Conectamos a dos. Llegamos a todos.</small>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="index.html">Inicio</a>
+          <a href="privacidad.html">Privacidad</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+      The generic legal page. `data-legal="query"` tells legal.js to take the slug
+      from `?doc=`, so a document created from the panel is published here without
+      a new HTML file. The markup below is what shows when the slug does not match
+      any published document, which in practice means a broken link.
+    -->
+    <main class="legal" data-legal="query">
+      <h1>Documento no encontrado</h1>
+      <p class="meta">Este enlace no corresponde a ningún documento publicado.</p>
+      <p>
+        Vuelve al <a href="index.html">inicio</a> o consulta la
+        <a href="privacidad.html">política de privacidad</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="FEROZ" width="56" height="56" />
+          <div>
+            <strong>FEROZ</strong>
+            <span>Conectamos a dos. Llegamos a todos.</span>
+          </div>
+        </div>
+        <nav class="topnav">
+          <a href="index.html">Inicio</a>
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="eliminar-cuenta.html">Eliminar cuenta</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      const PHONE = '593983859723';
+      for (const link of document.querySelectorAll('[data-wa]')) {
+        link.href = `https://wa.me/${PHONE}`;
+        link.target = '_blank';
+        link.rel = 'noopener';
+      }
+    </script>
+    <script src="legal.js"></script>
+  </body>
+</html>

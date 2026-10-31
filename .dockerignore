@@ -1,0 +1,6 @@
+.git
+.vercel
+Dockerfile
+nginx.conf
+.dockerignore
+.gitignore
