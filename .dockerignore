@@ -1,6 +1,6 @@
 .git
 .vercel
+*.log
 Dockerfile
-nginx.conf
 .dockerignore
 .gitignore
