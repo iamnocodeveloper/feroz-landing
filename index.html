@@ -454,23 +454,6 @@
       </div>
     </footer>
 
-    <script>
-      // One number, two conversations: the greeting tells whoever answers whether
-      // this is a client or a carrier before the first line.
-      const PHONE = '593983859723';
-      const MESSAGES = {
-        cliente:
-          'Hola, quiero publicar un envío en FEROZ. Vengo de la página web, soy cliente.',
-        transportista:
-          'Hola, quiero ofertar envíos en FEROZ. Vengo de la página web, soy transportista.',
-      };
-
-      for (const link of document.querySelectorAll('[data-wa]')) {
-        const message = MESSAGES[link.dataset.wa] || MESSAGES.cliente;
-        link.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
-        link.target = '_blank';
-        link.rel = 'noopener';
-      }
-    </script>
+    <script src="assets/wa-home.js"></script>
   </body>
 </html>
